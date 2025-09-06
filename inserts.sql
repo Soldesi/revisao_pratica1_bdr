@@ -1,0 +1,29 @@
+INSERT INTO loja (nome, cidade) VALUES
+('Game World', 'São Paulo'),
+('Mega Games', 'Rio de Janeiro'),
+('Pixel House', 'Belo Horizonte');
+
+INSERT INTO cliente (nome, email, cidade) VALUES
+('Ana Silva', 'ana.silva@email.com', 'São Paulo'),
+('Bruno Costa', 'bruno.costa@email.com', 'Curitiba'),
+('Carla Mendes', 'carla.mendes@email.com', 'Porto Alegre');
+
+INSERT INTO jogo (titulo, ano_lancamento, genero) VALUES
+('The Legend of Zelda: Breath of the Wild', 2017, 'Aventura'),
+('Elden Ring', 2022, 'RPG'),
+('FIFA 23', 2022, 'Esporte'),
+('Hollow Knight Silksong', 2025, 'Metroidvania');
+
+
+INSERT INTO compra (data_compra, id_cliente, id_loja) VALUES
+('2025-09-01', 1, 1), 
+('2025-09-02', 2, 2); 
+
+
+INSERT INTO compra_jogo (id_compra, id_jogo, quantidade) VALUES
+(1, 1, 1), 
+(1, 3, 2), 
+(2, 2, 1); 
+
+INSERT INTO compra_jogo (id_compra, id_jogo, quantidade) VALUES
+(2, 3, 1); 
